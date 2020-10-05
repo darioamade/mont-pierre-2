@@ -17,54 +17,71 @@
     <!-- header -->
     <header class="header">
         <div class="nav">
-            <div class="nav-top">
+            <div class="nav-top" id="myList">
                 <li class="address"><a href="#">
                         35 Oxford Street, <br>
                         London, SWH1 1NY <br>
                         020 799 7999 </a>
                 </li>
+                <div class="menu-open">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <p class="helper">Mont-Pierre</p>
-                <a href="#"><button class="banner-btn">Reserve a table</button></a>
+                <a href="#"><button class="banner-btn ">Reserve a table</button></a>
+                <div class="iconHider">
+                    <a id="removed" href="#popup"><svg class="social-icon-1">
+                            <use xlink:href="img/sprite.svg#icon-grid"> </use>
+                        </svg>
+                    </a>
+                    <svg class="social-icon-2">
+                        <use xlink:href="img/sprite.svg#icon-calendar"> </use>
+                    </svg>
+                </div>
             </div>
             <div class="nav-bottom">
                 <div class="nav-bottom-left">
-
                     <div class="nav-bottom-left-menuTog">
                         <div class="menu-open">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
 
+                        </div>
                         <nav class="navX">
                             <nav class="menu-close">
                                 <span></span>
                                 <span></span>
                             </nav>
                             <ul>
-                                <li><a href="index.html">Products</a></li>
+                                <!-- <li><a href="index.html">Products</a></li>
                                 <li><a href="rooms.html">Rooms</a></li>
                                 <li><a href="#">Inspiration</a></li>
                                 <li><a href="#">Interior</a></li>
                                 <li><a href="#">find store</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a href="#">contact</a></li> -->
                             </ul>
 
                         </nav>
                     </div>
-                    <p class="vl"></p>
-                    <div class="nav-bottom-left-icon">
 
-                        <svg class="social-icon">
-                            <use xlink:href="img/sprite.svg#icon-sweden"> </use>
-                        </svg>
-                        <p>Restaurant</p>
+                    <div class="nav-bottom-left-icon">
+                        <a href="#popup"><svg class="social-icon-1">
+                                <use xlink:href="img/sprite.svg#icon-grid"> </use>
+                            </svg>
+                        </a>
+                        <p href="#popup">Restaurant</p>
+                        <!-- <p class="vl"></p> 
+                              <a href="#popup"><svg class="plus-icon" >
+                        -->
                     </div>
 
                 </div>
+
                 <div class="nav-bottom-center">
                     <ul class="nav-link-links">
-                        <li><a href="#">Reservations </a></li>
+                        <li><a href="/booking.html">Reservations </a></li>
                         <li><a href="#"> Menus </a></li>
                         <li><a href="#">Private Dining </a></li>
                         <li><a href="#">Contact </a></li>
@@ -77,7 +94,6 @@
                         <use xlink:href="img/sprite.svg#icon-facebook111"></use>
                     </svg>
                     <p class="vl"></p>
-
                     <svg class="social-icon">
                         <use xlink:href="img/sprite.svg#icon-instagram"></use>
                     </svg>
@@ -86,6 +102,7 @@
             </div>
         </div>
     </header>
+    <div class="line-2"></div>
     <!-- Hero -->
     <hero id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- <a href="/#.html#zz"><button class="banner-btn">EXPLORE</button></a> -->
@@ -101,7 +118,7 @@
                         Our new autumn menus
                     </h1>
                     <h4>Enjoy the season's most spectacular menus</h4>
-                    <a href="/#.html#zz"><button class="banner-btn">Find Out More</button></a>
+                    <a href="/#.html#zz"><button class="banner-btn " id="btbReduceSize">Find Out More</button></a>
 
                 </div>
                 <div class="container"></div>
@@ -112,7 +129,7 @@
                         Set Menu
                     </h1>
                     <h4>Enjoy our seasonal two and three course menus.</h4>
-                    <a href="/#.html#zz"><button class="banner-btn">Find Out More</button></a>
+                    <a href="/#.html#zz"><button class="banner-btn " id="btbReduceSize">Find Out More</button></a>
 
                 </div>
                 <div class="container"></div>
@@ -123,7 +140,7 @@
                         Enjoy Dining in groups
                     </h1>
                     <h4>within 48-hours of test</h4>
-                    <a href="/#.html#zz"><button class="banner-btn">Find Out More</button></a>
+                    <a href="/#.html#zz"><button class="banner-btn " id="btbReduceSize">Find Out More</button></a>
 
 
                 </div>
@@ -151,19 +168,26 @@
         <div class="aboutUs">
             <div class="aboutUsText">
                 <h1>The Mont-Pierre Central London</h1>
-                <p>The Ivy has a reputation as one of the best restaurants in London, and with good reason. It’s more than
+                <p>The Ivy has a reputation as one of the best restaurants in London, and with good reason. It’s more
+                    than
                     just a great place to eat out – it’s an institution.</p>
-    
-                <p> Enjoy a delicious lunch, intimate dinner, or one of our indulgent Sunday brunches. Our menus cater for
+
+                <p> Enjoy a delicious lunch, intimate dinner, or one of our indulgent Sunday brunches. Our menus cater
+                    for
                     everyone, and include great options for vegetarians and vegans. No reservation? No problem. You’re
-                    welcome at our central dining bar where you can enjoy a glass of wine or a cocktail from our dedicated
+                    welcome at our central dining bar where you can enjoy a glass of wine or a cocktail from our
+                    dedicated
                     menu.</p>
-                    <h4>Fine Dining in Covent Garden, London</h4>
-                    <p>Seeing a show or headed for an evening out? Then look no further. The Ivy is perfectly placed for you to enjoy a delicious meal before your night out. We’re just around the corner from West End stalwarts the Piccadilly and Cambridge Theatres, as well as the famous Palace Theatre.</p>
-                    <p>We want you to have the very best experience possible, and so we are still implementing the highest standards of health and safety to ensure guests and employees are able to dine and work in confidence and in a safe environment. Further information can be found here.</p>
+                <h4>Fine Dining in Covent Garden, London</h4>
+                <p>Seeing a show or headed for an evening out? Then look no further. The Ivy is perfectly placed for you
+                    to enjoy a delicious meal before your night out. We’re just around the corner from West End
+                    stalwarts the Piccadilly and Cambridge Theatres, as well as the famous Palace Theatre.</p>
+                <p>We want you to have the very best experience possible, and so we are still implementing the highest
+                    standards of health and safety to ensure guests and employees are able to dine and work in
+                    confidence and in a safe environment. Further information can be found here.</p>
 
             </div>
-            
+
         </div>
     </hero>
     <section class="miniGallery">
@@ -175,14 +199,14 @@
         <div class="cta">
             <h2>Our Food</h2>
             <p>Serving seasonal menus featuring Franche classics alongside modern British dishes</p>
-            <a href="/#.html#zz"><button class="banner-btn">View Our Menus</button></a>
+            <a href="/#.html#zz"><button class="banner-btn " id="btbReduceSize">View Our Menus</button></a>
         </div>
         <div class="container-title-sub">
             <h1>
                 Set Menu
             </h1>
             <h4>Enjoy our seasonal two and three course menus.</h4>
-            <a href="/#.html#zz"><button class="banner-btn">Find Out More</button></a>
+            <a href="/#.html#zz"><button class="banner-btn " id="btbReduceSize">Find Out More</button></a>
 
         </div>
     </section>
@@ -191,42 +215,87 @@
             <h3>
                 Dress Code
             </h3>
-            <p>Our dress code is smart casual. Tailored shorts and short sleeved shirts are permitted. However guests are asked to be respectful of the fact that many diners will be dressed for a celebration.
+            <p>Our dress code is smart casual. Tailored shorts and short sleeved shirts are permitted. However guests
+                are asked to be respectful of the fact that many diners will be dressed for a celebration.
 
-                </p>
+            </p>
         </div>
         <p class="vl1"></p>
+        <p class="vl-hidden"></p>
         <div class="dressCode-2">
             <h3>
                 Central Dining Bar</h3>
-                <p>
-                    The Ivy welcomes customers without reservations at the central dining bar, for lunch and dinner. The bar is not licensed for drinks without food.
-                </p>
+            <p>
+                The Ivy welcomes customers without reservations at the central dining bar, for lunch and dinner. The bar
+                is not licensed for drinks without food.
+            </p>
         </div>
     </section>
- 
+
     <section class="contact">
         <h2>Sign up Today</h2>
         <p>For the latest updates, events and menus from London's favourite restaurants.
         </p>
-        <form action=""></form>
+        <div class="contact__form">
+            <form method="post" action="mailer.php" class="form">
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder=" First Name*" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="* Last Name*" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email address" id=email required>
 
-        <p class="p3">We’d like to keep in touch with you about all our restaurants with exclusive news and advance booking opportunities. We will contact you about special events, new openings as well as the latest seasonal menus. We will keep your data secure, and of course would never sell or share data. You can change your mind at any time by clicking unsubscribe on any email you receive or by clicking the link on our website. For further detail on our data policy and protection.</p>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder=" Post Code*" required>
+                </div>
+
+                <!-- <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>	
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div> -->
+
+        </div>
+        </form>
+        <div class="form__group">
+            <a href="/#.html#zz"><button class="form__input  banner-btn-3">Submit</button></a>
+        </div>
+        <div class="row">
+            <div class="col span-2-of-3">
+                <input type="checkbox" name="news" id="news" checked>I wish to receive your emails
+            </div>
+        </div>
+        </div>
+
+        <p class="p3">We’d like to keep in touch with you about all our restaurants with exclusive news and advance
+            booking opportunities. We will contact you about special events, new openings as well as the latest seasonal
+            menus. We will keep your data secure, and of course would never sell or share data. You can change your mind
+            at any time by clicking unsubscribe on any email you receive or by clicking the link on our website. For
+            further detail on our data policy and protection. </p>
 
     </section>
     <section class="maps">
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d19400.356556693354!2d0.011628439723161393!3d51.48393040043044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e3!4m3!3m2!1d51.5024204!2d0.007732999999999999!4m0!5e0!3m2!1sen!2suk!4v1601855660546!5m2!1sen!2suk" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d19400.356556693354!2d0.011628439723161393!3d51.48393040043044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e3!4m3!3m2!1d51.5024204!2d0.007732999999999999!4m0!5e0!3m2!1sen!2suk!4v1601855660546!5m2!1sen!2suk"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
     </section>
 
     <footer class="footer">
         <div class="nav-bottom-left">
-        <div class="nav-top">
-            <p class="helper">Mont-Pierre</p>
-            <p>Since 1984</p>
-            
+            <div class="nav-top">
+                <p class="helper">Mont-Pierre</p>
+                <p>Since 1984</p>
+
+            </div>
         </div>
-    </div>
         <div class="nav-bottom-center">
             <ul class="nav-link-links">
                 <li><a href="#">All restaurants </a></li>
@@ -249,8 +318,19 @@
             </svg>
 
         </div>
-        
     </footer>
+    <!-- PopUp -->
+    <div class="popup" id="popup">
+        <a href="#" class="popup-close">&times;</a>
+        <div class="popup-content">
+            <h1>
+                Our Restaurants
+            </h1>
+            <h3> EXCITING NEWS 10 MORE RESTAURANT ARE OPENING SOON ALL ACROSS THE GREAT LONDON</h3>
+
+        </div>
+    </div>
+    <!-- PopUp END -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
