@@ -1,13 +1,5 @@
 "use strict";
 
-// const menuOpen = document.querySelector('.menu-open');
-// const menuClose = document.querySelector('.menu-close');
-// const nav = document.querySelector('.navX');
-// menuOpen.addEventListener('click', menuTog);
-// menuClose.addEventListener('click', menuTog);
-// function menuTog(e) {
-//     nav.classList.toggle('active')
-// };
 var checkAv = document.getElementById('checkbox');
 checkAv.addEventListener('click', function () {
   alert('Page in development 🧑‍💻 ');
@@ -44,3 +36,15 @@ btbReduceSize.addEventListener('click', function () {
 // const elemText = document.createTextNode('This is a Div');
 // elem.appendChild(elemText);
 // document.body.appendChild(elem);
+
+var menuOpen = document.querySelector('.menu-open');
+var menuClose = document.querySelector('.menu-close');
+var navX = document.querySelector('.navX');
+menuOpen.addEventListener('click', menuTog);
+menuClose.addEventListener('click', menuTog);
+
+function menuTog(e) {
+  navX.classList.toggle('active');
+}
+
+;
