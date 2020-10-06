@@ -14,9 +14,19 @@ let checkAv = document.getElementById('checkbox');
 checkAv.addEventListener('click', () => {
     alert('Page in development 🧑‍💻 ')
 })
+let btbReduceSize = document.getElementById('btbReduceSize');
+btbReduceSize.addEventListener('click', () => {
+    alert('Page in development 🧑‍💻 ')
+})
 
 
-// (function(){
+// let buttonX = document.getElementById('.banner-btn');
+// buttonX.addEventListener('click', () => {
+//     alert('Page in development 🧑‍💻 ')
+// })
+
+
+// (function(
 //     'use strict';
 
 //     let newElement = document.createElement('div');

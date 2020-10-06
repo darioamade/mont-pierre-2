@@ -284,6 +284,7 @@ button:focus {
   letter-spacing: 2px;
   color: #0d5c4a;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 469px) {
@@ -505,6 +506,7 @@ header {
 .container-title-sub h4 {
   font-size: 2.2rem;
   font-weight: 500;
+  line-height: 1.5;
   text-align: start;
 }
 
@@ -782,6 +784,30 @@ header {
   .dressCode-1 p {
     width: 100%;
   }
+}
+
+#pStyled {
+  width: 100%;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: Corporate A Pro Light, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #6f6f6d;
+}
+
+#h1Font {
+  font-size: 4rem;
+}
+
+#pStyled2 {
+  width: 100%;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: Corporate A Pro Light, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #08493a;
 }
 
 .dressCode-2 {
@@ -1258,7 +1284,6 @@ header {
   max-width: 120rem;
   margin: 0 auto;
   height: 100vh;
-  border: 1px solid #ccc;
 }
 
 .navBook {
@@ -1270,6 +1295,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
+}
+@media screen and (max-width: 650px) {
+  .navBook {
+    flex-direction: column;
+    height: 12rem;
+  }
 }
 
 .addressBook,
@@ -1285,6 +1317,9 @@ header {
   letter-spacing: 1px;
   font-family: Corporate A Pro Light, serif;
 }
+.navBook li a:hover {
+  border-bottom: 1px solid #002f24;
+}
 
 .helperBook {
   font-size: inherit;
@@ -1293,6 +1328,16 @@ header {
   letter-spacing: 2px;
   color: #0d5c4a;
   text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  .helperBook {
+    font-size: 2rem;
+  }
 }
 
 .bookImage {
@@ -1313,7 +1358,7 @@ header {
 }
 
 .bookImage2 {
-  flex: 0 0 40%;
+  flex: 0 0 50%;
   height: 100%;
   background-color: rgba(79, 43, 43, 0);
   display: flex;
@@ -1321,7 +1366,10 @@ header {
   justify-content: flex-end;
   align-items: center;
 }
-.bookImage2 p {
+.bookImage2 h3 {
+  margin: 2rem 0 1rem 0;
+}
+.bookImage2 p2 {
   text-decoration: none;
   color: #002f24;
   font-size: 1.4rem;
@@ -1338,14 +1386,20 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.166);
-  width: 40vw;
-  height: 40vh;
+  width: 60rem;
+  height: 30vh;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 4rem;
+}
+@media screen and (max-width: 768px) {
+  .bookBooking {
+    padding: 2rem;
+    width: 100%;
+  }
 }
 .bookBooking p {
   text-decoration: none;
@@ -1356,5 +1410,69 @@ header {
   font-family: Corporate A Pro Light, serif;
   margin-bottom: 3rem;
   text-align: center;
-  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .bookBooking p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.barImage {
+  max-width: 1695px;
+  height: 80vh;
+  padding: 4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.barImage-1 {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/12.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(120%);
+}
+@media screen and (max-width: 980px) {
+  .barImage-1 {
+    flex: 0 0 70%;
+  }
+}
+
+.barImage-2 {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 980px) {
+  .barImage-2 {
+    flex: 0 0 30%;
+  }
+}
+
+.barImage-3 {
+  background-color: white;
+  position: absolute;
+  padding: 4rem;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  min-width: 35vw;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.166);
+}
+.barImage-3 h2,
+.barImage-3 #pStyled {
+  margin-bottom: 3rem;
 }

@@ -11,7 +11,15 @@
 var checkAv = document.getElementById('checkbox');
 checkAv.addEventListener('click', function () {
   alert('Page in development 🧑‍💻 ');
-}); // (function(){
+});
+var btbReduceSize = document.getElementById('btbReduceSize');
+btbReduceSize.addEventListener('click', function () {
+  alert('Page in development 🧑‍💻 ');
+}); // let buttonX = document.getElementById('.banner-btn');
+// buttonX.addEventListener('click', () => {
+//     alert('Page in development 🧑‍💻 ')
+// })
+// (function(
 //     'use strict';
 //     let newElement = document.createElement('div');
 //     newElement.textContent = "I am a new Element";
